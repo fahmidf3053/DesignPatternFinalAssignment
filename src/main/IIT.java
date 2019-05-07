@@ -4,6 +4,9 @@ import arrangement.*;
 import priceGiving.Command;
 import priceGiving.GivePrice;
 import priceGiving.Price;
+import priorityControl.Person;
+import priorityControl.Student;
+import priorityControl.Stuffs;
 import work.CulturalTeam;
 import work.FoodTeam;
 import work.IWork;
@@ -46,6 +49,10 @@ public class IIT extends Department{
 		System.out.println(command.undo());
 		System.out.println(command.undo());
 		
+		Person person = new Student("Teacher");
+		Person person1 = new Stuffs("Student");
+		person.greetings();
+		person1.greetings();
 		
 		
 	}
